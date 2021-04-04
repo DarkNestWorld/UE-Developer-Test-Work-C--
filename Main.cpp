@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {   
 	setlocale(LC_ALL,".866");
-    string input;
+    	string input;
 	do	{
 		cout<<"Input string, empty string close programm:"<<endl;
 		getline(cin,input);
