@@ -17,22 +17,21 @@ int main()
 			input[i] = tolower(input[i]);
 		string output(l,'0');
 		int n = 0;
-	    for (int i = 0;i<l;i++)
+	    	for (int i = 0;i<l;i++)
 			if (output[i]!=')')
 			{
-			    n = 0;
-		        for(int j = i+1;j<l;j++)
-	                if (input[i] == input[j])
+				n = 0;
+		        	for(int j = i+1;j<l;j++)
+	                		if (input[i] == input[j])
 					{
 						output[j] = ')';
-					    n+=1;
-				    }
-			    if(n != 0)
-		            output[i] = ')';
-	            else
-	             output[i] = '('; 
-	        }
-		cout<<"Output:"<<endl;
-	    cout<<output<<endl;
+						n+=1;
+				    	}
+				if(n != 0)
+					output[i] = ')';
+				else
+					output[i] = '('; 
+			}
+		cout<<"Output:"<<endl<<output<<endl;
 	}	while (input.length() != 0);
 }
